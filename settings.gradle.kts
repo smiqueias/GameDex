@@ -31,3 +31,4 @@ dependencyResolutionManagement {
 include(":androidApp")
 include(":shared")
 include(":features:catalog")
+include(":core:common")
