@@ -50,4 +50,5 @@ composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMul
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 cinekmpKmpLibrary = { id = "cinekmp.kmp.library" }
+cinekmpKmpCompose = { id = "cinekmp.kmp.compose" }
 androidLint = { id = "com.android.lint", version.ref = "agp" }

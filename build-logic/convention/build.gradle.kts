@@ -1,5 +1,3 @@
-import org.gradle.kotlin.dsl.`kotlin-dsl`
-
 plugins {
     `kotlin-dsl`
 }
@@ -14,6 +12,11 @@ gradlePlugin {
         register("kmpLibrary") {
             id = "cinekmp.kmp.library"
             implementationClass = "org.odin.cinekmp.buildlogic.KmpLibraryConventionPlugin"
+        }
+
+        register("kmpCompose") {
+            id = "cinekmp.kmp.compose"
+            implementationClass = "org.odin.cinekmp.buildlogic.KmpComposeConventionPlugin"
         }
     }
 }
