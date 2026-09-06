@@ -5,6 +5,7 @@ plugins {
 dependencies {
     compileOnly(libs.gradle.plugin.android)
     compileOnly(libs.gradle.plugin.kotlin)
+    implementation(libs.kotlin.serialization.gradlePlugin)
 }
 
 gradlePlugin {

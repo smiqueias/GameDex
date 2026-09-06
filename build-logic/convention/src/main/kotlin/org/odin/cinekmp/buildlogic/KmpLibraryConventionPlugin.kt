@@ -12,6 +12,7 @@ class KmpLibraryConventionPlugin : Plugin<Project> {
         with(target) {
             pluginManager.apply("org.jetbrains.kotlin.multiplatform")
             pluginManager.apply("com.android.kotlin.multiplatform.library")
+            pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
 
             val frameworkBaseName = path.removePrefix(":").replace(":", "-")
             val androidBaseName = path.removePrefix(":").replace(":", ".")
