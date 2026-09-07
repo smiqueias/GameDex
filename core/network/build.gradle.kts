@@ -14,6 +14,7 @@ val rawgApiKey: String = localProperties.getProperty("RAWG_API_KEY") ?: ""
 
 buildkonfig {
     packageName = "org.odin.gamedex.core.network"
+    exposeObjectWithName = "BuildKonfig"
     defaultConfigs {
         buildConfigField(FieldSpec.Type.STRING, "RAWG_API_KEY", rawgApiKey)
     }
