@@ -21,7 +21,7 @@ fun createHttpClient(
     }
 
     install(Logging) {
-        level = LogLevel.INFO
+        level = LogLevel.ALL
     }
 
     install(HttpTimeout) {
@@ -31,6 +31,4 @@ fun createHttpClient(
     }
 
     additionalConfig()
-
-    val baseHttpClient: HttpClient by lazy { createHttpClient() }
 }

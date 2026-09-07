@@ -7,6 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import org.odin.gamedex.core.common.mvi.uieffect.UiEffectExceptionHandler.Companion.uiEffectExceptionHandler
 import org.odin.gamedex.core.common.text.UiText
 
 fun UiEffectHandler.disableLoading() {

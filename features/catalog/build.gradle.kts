@@ -11,6 +11,12 @@ kotlin {
             implementation(project(":core:navigation"))
             implementation(project(":core:designsystem"))
             implementation(libs.ktor.client.core)
+            implementation(libs.koin.core)
+            implementation(libs.koin.compose.viewmodel)
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor3)
+            implementation(libs.jetbrains.navigation.compose)
+            implementation(libs.compose.material.icons.core)
         }
     }
 }

@@ -53,6 +53,14 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+
+            implementation(project(":core:common"))
+            implementation(project(":core:network"))
+            implementation(project(":core:navigation"))
+            implementation(project(":core:designsystem"))
+            implementation(project(":features:catalog"))
+            implementation(libs.koin.compose)
+            implementation(libs.jetbrains.navigation.compose)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
