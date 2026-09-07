@@ -19,7 +19,7 @@ kotlin {
     }
     
     android {
-       namespace = "org.odin.cinekmp.shared"
+       namespace = "org.odin.gamedex.shared"
        compileSdk = libs.versions.android.compileSdk.get().toInt()
        minSdk = libs.versions.android.minSdk.get().toInt()
     

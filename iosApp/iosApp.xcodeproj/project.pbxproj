@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		DF639ECF3FF4507591B45560 /* CineKMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineKMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF639ECF3FF4507591B45560 /* GameDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -59,7 +59,7 @@
 		6CB152A3C1AAA57C22EAB795 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF639ECF3FF4507591B45560 /* CineKMP.app */,
+				DF639ECF3FF4507591B45560 /* GameDex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			packageProductDependencies = (
 			);
 			productName = iosApp;
-			productReference = DF639ECF3FF4507591B45560 /* CineKMP.app */;
+			productReference = DF639ECF3FF4507591B45560 /* GameDex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

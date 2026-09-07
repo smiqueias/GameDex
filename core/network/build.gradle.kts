@@ -1,5 +1,22 @@
+import com.codingfeline.buildkonfig.compiler.FieldSpec
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.cinekmpKmpLibrary)
+    alias(libs.plugins.buildkonfig)
+}
+
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) load(file.inputStream())
+}
+val rawgApiKey: String = localProperties.getProperty("RAWG_API_KEY") ?: ""
+
+buildkonfig {
+    packageName = "org.odin.gamedex.core.network"
+    defaultConfigs {
+        buildConfigField(FieldSpec.Type.STRING, "RAWG_API_KEY", rawgApiKey)
+    }
 }
 
 kotlin {
@@ -12,11 +29,9 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
             implementation(project(":core:common"))
         }
-
         androidMain.dependencies {
             implementation(libs.ktor.client.android)
         }
-
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
         }

@@ -1,4 +1,4 @@
-rootProject.name = "CineKMP"
+rootProject.name = "GameDex"
 
 pluginManagement {
     includeBuild("build-logic")
@@ -34,3 +34,4 @@ include(":features:catalog")
 include(":core:common")
 include(":core:network")
 include(":core:designsystem")
+include(":core:navigation")

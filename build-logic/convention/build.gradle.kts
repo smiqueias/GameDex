@@ -12,12 +12,12 @@ gradlePlugin {
     plugins {
         register("kmpLibrary") {
             id = "cinekmp.kmp.library"
-            implementationClass = "org.odin.cinekmp.buildlogic.KmpLibraryConventionPlugin"
+            implementationClass = "org.odin.gamedex.buildlogic.KmpLibraryConventionPlugin"
         }
 
         register("kmpCompose") {
             id = "cinekmp.kmp.compose"
-            implementationClass = "org.odin.cinekmp.buildlogic.KmpComposeConventionPlugin"
+            implementationClass = "org.odin.gamedex.buildlogic.KmpComposeConventionPlugin"
         }
     }
 }

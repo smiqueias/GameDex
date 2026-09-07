@@ -21,11 +21,11 @@ dependencies {
 }
 
 android {
-    namespace = "org.odin.cinekmp"
+    namespace = "org.odin.gamedex"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "org.odin.cinekmp"
+        applicationId = "org.odin.gamedex"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
